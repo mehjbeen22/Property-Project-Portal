@@ -1,0 +1,89 @@
+.mainCantainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.detail-heading {
+  margin-top: "1rem";
+  color: var(--base);
+  font-size: "2.3rem";
+  font-family: 'Playfair Display', serif;
+}
+
+.formHolder {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 40%;
+  margin-block: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.nameInputHolder {
+  margin-top: 1rem;
+  /* border: solid greenyellow; */
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+label {
+  text-align: left;
+  font-size: 1.2rem;
+  border: none;
+}
+
+.inputbox {
+  margin-block: 8px;
+  padding: 10px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  background-color: #e5e7eb;
+  border: none;
+  border-radius: 5px;
+}
+
+.checkBoxCase {
+  font-size: 1.2rem;
+  margin: 10px;
+}
+
+
+.Submit {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid var(--base);
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  width: 35%;
+  padding: 10px;
+  margin: 10px auto;
+  font-size: 1.2rem;
+  border-radius: 8px;
+
+
+}
+
+
+.Submit:hover {
+  background-color: var(--base2);
+}
+
+
+.PriceCase {
+  /* border: solid red; */
+  display: flex;
+  gap: 10px;
+}
+
+.priceBlock {
+  /* border: solid teal; */
+  text-align: left;
+}

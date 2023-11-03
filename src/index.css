@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,400&display=swap');
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  --primary:#ff4f9f;
+  --secondary:#ffa4ce;
+  --border:#ff0b7b;
+  --background:#ffc6e0;
+  --base:#4f0024;
+  --base2:#710034;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+}

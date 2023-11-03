@@ -1,0 +1,19 @@
+.header {
+    height: 5rem;
+    background-color:var(--base2); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  
+  .link {
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 3px 10px;
+    border-radius: 0.3rem;
+    border: 2px groove #f5f6fa;
+    cursor: pointer;
+    color: white;
+    text-shadow: 0.5px 1px var(--secondary);
+  }
