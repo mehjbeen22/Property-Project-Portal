@@ -47,6 +47,7 @@ export const AddDetailPage = () => {
             value={persistData?.address}
             className={styles.inputbox}
             onChange={ChangeHandler}
+            required
           />
 
           <label> Geo Location</label>
@@ -93,6 +94,7 @@ export const AddDetailPage = () => {
             accept="image/*"
             type="file"
             name="photos"
+            required
             // value={persistData?.photos}
             className={styles.inputbox}
             onChange={ChangeImageHandler}
