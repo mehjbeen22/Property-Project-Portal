@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import styles from  "./SigninPage.module.css";
+import { AddDetailPage } from "../addDetails/AddDetailPage";
 
 export const SigninPage = () => {
+  const [showDetailsPage , setShowDetailsPage] = useState(true)
+
   const [form, setForm] = useState({
     Email: "",
     Password: "",
@@ -16,9 +19,18 @@ export const SigninPage = () => {
     e.preventDefault();
   };
 
+
+  const handleShowDetailPage = () =>{
+    if(form.userName !== "" && form.Email !== "" && form.Password !==""){
+      // console.log(form.userName);
+      setShowDetailsPage(false)
+    }
+  }
   return (
     <>
-      <div className={styles.container}>
+      {showDetailsPage ?
+        
+        <div className={styles.container}>
         <form className={styles.formCase} onSubmit={onSubmitHandler}>
           <h1
             style={{ marginTop: "1rem", color: "#4f0024", fontSize: "2.3rem" }}
@@ -28,11 +40,12 @@ export const SigninPage = () => {
           <label htmlFor="userName"> User Name</label>
           <input
             type="text"
-            name="useName"
+            name="userName"
             value={form.userName}
             placeholder="User Name"
             className={styles.inputBox}
             onChange={onChangeHandler}
+            required
           />
           <label htmlFor="email"> Email</label>
           <input
@@ -42,6 +55,7 @@ export const SigninPage = () => {
             placeholder="Enter Email"
             className={styles.inputBox}
             onChange={onChangeHandler}
+            required
           />
           <label htmlFor="password"> Password</label>
           <input
@@ -51,12 +65,18 @@ export const SigninPage = () => {
             placeholder="Enter Password"
             className={styles.inputBox}
             onChange={onChangeHandler}
+            required
           />
-          <button className={styles.loginBtn}>Sign In</button>
+          <button className={styles.loginBtn} onClick={handleShowDetailPage}>Sign In</button>
           <div className={styles.para}></div>
         </form>
       </div>
-    </>
+
+      : 
+      <AddDetailPage/>
+} 
+
+   </>
   );
 };
 

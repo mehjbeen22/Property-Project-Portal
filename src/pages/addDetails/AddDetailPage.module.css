@@ -74,6 +74,7 @@ label {
 
 .Submit:hover {
   background-color: var(--base2);
+  color: #fff;
 }
 
 
